@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+body {
+  background: url("images/pattern-background-desktop.svg"), hsl(225, 100%, 94%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left/ top right, bottom right;
+  margin: 0;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15%;
+  height: 589px;
+}
+.center-section {
+  border: 1px solid transparent;
+  height: 700px;
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 1px 4px 15px 4px rgba(196, 188, 196, 1);
+}
+.heading-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.content {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400px;
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+.order-summary {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700px;
+  font-size: 30px;
+  color: hsl(223, 47%, 23%);
+}
+.payment-section {
+  width: 400px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  margin: 8%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  height: 90px;
+  background-color: hsl(225, 100%, 98%);
+}
+.change {
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 10px;
+  margin-left: 90px;
+  padding-right: 40px;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+
+  cursor: pointer;
+}
+.list-item {
+  list-style: none;
+  padding: 0;
+  margin: 1px;
+  padding-left: 20px;
+}
+.payment-section img {
+  width: 50px;
+  height: 50px;
+  padding-left: 40px;
+}
+.annual-plan {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700px;
+}
+.price {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700px;
+  color: hsl(224, 23%, 55%);
+}
+.btn-proceed-payment {
+  width: 400px;
+  height: 50px;
+  background: hsl(245, 75%, 52%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.btn-cancel-order {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  color: hsl(223, 47%, 23%);
+  background: none;
+  border: transparent;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .heading-picture img {
+    border-radius: 20px 20px 0 0;
+  }
+  .center-section {
+    box-shadow: 1px 4px 15px 4px rgba(196, 188, 196, 1);
+  }
+  .payment-section {
+    margin-right: 40px;
+    margin-left: 40px;
+    width: 330px;
+  }
+  .change {
+    padding-right: 70px;
+  }
+  .btn-proceed-payment {
+    width: 345px;
+  }
+  .payment-section img {
+    padding-left: 65px;
+  }
+}
